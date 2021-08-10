@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz | vanilla Triangle</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="container">
+		<a href="../index.html">
+			<p class="go-back"><i class="fas fa-chevron-left"></i>Go back</p>
+		</a>
+		<h1>Quiz On Triangle</h1>
+		<form id="quiz-form">
+			<div class="question-container">
+				<p>1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+				<label>
+					<input type="radio" id="radio1" required name="ques1" value="45°">
+					45°
+				</label>
+				<label>
+					<input type="radio" id="radio2" required name="ques1" value="90°">
+					90°
+				</label>
+				<label>
+					<input type="radio" id="radio3" required name="ques1" value="60°">
+					60°
+				</label>
+			</div>
+			<div class="question-container">
+				<p>2. If a triangle has an angle of 90°, what is it called?</p>
+				<label>
+					<input type="radio" id="radio4" required name="ques2" value="obtuse">
+					obtuse
+				</label>
+				<label>
+					<input type="radio" id="radio5" required name="ques2" value="acute">
+					acute
+				</label>
+				<label>
+					<input type="radio" id="radio6" required name="ques2" value="right angled">
+					right angled
+				</label>
+			</div>
+			<div class="question-container">
+				<p>3. If a triangle has angles 90°, 60°,
+					30°. Is it a
+					right angle triangle?</p>
+
+				<label for="radio7" class="label"><input required type="radio" id="radio7" name="que3" value="yes">
+					yes</label>
+
+				<label for="radio8" class="label"><input required type="radio" id="radio8" name="que3" value="no">
+					no</label>
+			</div>
+
+			<div class="question-container">
+				<p>4. A triangle has angles 60°, 60°, 60°.
+					Is it an
+					equilateral triangle?</p>
+
+				<label for="radio9" class="label"><input required type="radio" id="radio9" name="que4" value="yes">
+					yes</label>
+
+				<label for="radio10" class="label"><input required type="radio" id="radio10" name="que4" value="no">
+					no</label>
+			</div>
+
+			<div class="question-container">
+				<p>5. If a triangle has angles 25°, 75°,
+					80°. Is it an
+					acute triangle?</p>
+
+				<label for="radio11" class="label"><input required type="radio" id="radio11" name="que5" value="yes">
+					yes</label>
+
+				<label for="radio12" class="label"><input required type="radio" id="radio12" name="que5" value="no">
+					no</label>
+			</div>
+			<div class="question-container">
+				<p>6. If a triangle has 2 sides with equal lengths and 75° angle
+					between them.
+					What is the type of triangle?</p>
+
+				<label for="radio13" class="label"><input required type="radio" id="radio13" name="que6"
+						value="equilateral">
+					Equilateral</label>
+
+				<label for="radio14" class="label"><input required type="radio" id="radio14" name="que6"
+						value="isosceles">
+					Isosceles</label>
+
+				<label for="radio15" class="label"><input required type="radio" id="radio15" name="que6"
+						value="right angled">
+					Right</label>
+			</div>
+
+			<div class="question-container">
+				<p>7. If a triangle has 2 angles of 75°. What is the measure of
+					third angle?</p>
+
+				<label for="radio16" class="label"><input required type="radio" id="radio16" name="que7" value="25°">
+					25°</label>
+
+				<label for="radio17" class="label"><input required type="radio" id="radio17" name="que7" value="30°">
+					30°</label>
+
+				<label for="radio18" class="label"><input required type="radio" id="radio18" name="que7" value="15°">
+					15°</label>
+			</div>
+			<div class="question-container">
+				<p>8. If a triangle has 2 sides with equal lengths and 60° angle
+					between them.
+					What is the type of triangle?</p>
+
+				<label for="radio19" class="label"><input required type="radio" id="radio19" name="que8"
+						value="equilateral">
+					Equilateral</label>
+
+				<label for="radio20" class="label"><input required type="radio" id="radio18" name="que8"
+						value="isosceles">
+					Isosceles</label>
+
+				<label for="radio20" class="label"><input required type="radio" id="radio20" name="que8" value="both">
+					Both</label>
+			</div>
+
+			<div class="question-container">
+				<p>9. The perimeter of an equilateral triangle is 15cm. What is the length of
+					one
+					side?</p>
+
+				<label for="radio21" class="label"><input required type="radio" id="radio21" name="que9" value="15cm">
+					15cm</label>
+
+				<label for="radio22" class="label"><input required type="radio" id="radio22" name="que9" value="45cm">
+					45cm</label>
+
+				<label for="radio23" class="label"><input required type="radio" id="radio23" name="que9" value="5cm">
+					5cm</label>
+			</div>
+
+			<div class="question-container">
+				<p>10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of
+					triangle?</p>
+
+				<label for="radio24" class="label"><input required type="radio" id="radio24" name="que10"
+						value="equilateral">
+					Equilateral</label>
+
+				<label for="radio25" class="label"><input required type="radio" id="radio25" name="que10"
+						value="isosceles">
+					Isosceles</label>
+
+				<label for="radio26" class="label"><input required type="radio" id="radio26" name="que10"
+						value="scalene">
+					Scalene</label>
+			</div>
+			<button id="submit-btn" class="quiz-submit" type="submit">Submit</button>
+		</form>
+		<div id="output"></div>
+		<div class="footer">
+			<p>
+				Developed by
+				<a href="https://abhishekkgautam.netlify.app" target="_blank" rel="noreferrer">
+					Abhishek Gautam
+				</a>
+			</p>
+			<ul class="social-links list-non-bullet">
+				<li class="list-item-inline">
+					<a target="_blank" class="link" href="https://github.com/AbhishekkGautam" rel="noreferrer">
+						<i class="fab fa-github fa-1x"></i>
+					</a>
+				</li>
+				<li class="list-item-inline">
+					<a target="_blank" class="link" href="https://twitter.com/helloAbhishekk" rel="noreferrer">
+						<i class="fab fa-twitter fa-1x"></i>
+					</a>
+				</li>
+				<li class="list-item-inline">
+					<a target="_blank" class="link" href="https://www.linkedin.com/in/abhishek-gautam-54684a167/"
+						rel="noreferrer">
+						<i class="fab fa-linkedin-in fa-1x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./quiz.js"></script>
+</body>
+
+</html>

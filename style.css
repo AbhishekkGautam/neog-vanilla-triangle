@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #bd3f0d;
+  --secondary-color: #9a3412;
+  --light-orange: #fff7eb;
+  --dark-orange: #7c2d12;
+  --output-color: #fff1df;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+  background-color: var(--light-orange);
+}
+
+.container {
+  width: 43%;
+  margin: auto;
+  min-height: 70vh;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--dark-orange);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 100px;
+  margin: 0.3rem 0.3rem 0.6rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.8rem;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer a {
+  color: dodgerblue;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 50%;
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

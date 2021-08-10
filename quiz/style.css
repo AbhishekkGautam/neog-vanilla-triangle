@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #bd3f0d;
+  --secondary-color: #9a3412;
+  --light-orange: #fff7eb;
+  --dark-orange: #7c2d12;
+  --output-color: #fff1df;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+  background-color: var(--light-orange);
+}
+
+.container {
+  width: 43%;
+  margin: auto;
+  padding: 3rem 0rem;
+}
+
+form {
+  margin: 4rem 0rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  color: var(--dark-orange);
+}
+
+.go-back {
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  color: #7c2d12;
+}
+
+.go-back i {
+  margin-right: 1rem;
+}
+.question-container {
+  margin: 1.5rem 0rem;
+  padding: 1rem;
+  background-color: #fdf1df;
+  border-radius: 0.2rem;
+}
+
+.question-container p {
+  margin-top: 0;
+  text-align: left;
+}
+
+.quiz-submit {
+  padding: 0.6rem 2rem;
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#output {
+  background-color: white;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  border-radius: 0.2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.8rem;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer a {
+  color: dodgerblue;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .quiz-submit {
+    width: 100%;
+    margin: auto;
+  }
+}
