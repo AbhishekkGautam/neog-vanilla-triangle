@@ -14,8 +14,12 @@ function submitHandler(e) {
   e.preventDefault();
   let base = Number(baseInput.value);
   let height = Number(heightInput.value);
-  let result = calculateArea(base, height);
-  outputEl.innerText = `Area of this triangle with base ${base} units and height ${height} units is ${result} sq units.`;
+  if (base > 0 && height > 0) {
+    let result = calculateArea(base, height);
+    outputEl.innerText = `Area of this triangle with base ${base} units and height ${height} units is ${result} sq units.`;
+  } else {
+    outputEl.innerText = `Values must be greater than 0.`;
+  }
 }
 
 form.addEventListener("submit", submitHandler);
