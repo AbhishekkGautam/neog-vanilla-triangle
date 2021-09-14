@@ -14,9 +14,12 @@ function submitHandler(e) {
   e.preventDefault();
   let base = Number(baseInput.value);
   let height = Number(heightInput.value);
-  let result = calculateHypotenuse(base, height);
-  console.log(result);
-  outputEl.innerText = `Hypotenuse of this triangle with base ${base} units and height ${height} units is ${result} units.`;
+  if (base > 0 && height > 0) {
+    let result = calculateHypotenuse(base, height);
+    outputEl.innerText = `Hypotenuse of this triangle with base ${base} units and height ${height} units is ${result} units.`;
+  } else {
+    outputEl.innerText = `Values must be greater than 0.`;
+  }
 }
 
 form.addEventListener("submit", submitHandler);
