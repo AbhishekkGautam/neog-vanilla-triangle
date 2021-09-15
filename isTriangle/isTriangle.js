@@ -10,16 +10,24 @@ function calculateSumOfAngles(angleOne, angleTwo, angleThree) {
 }
 
 function checkBtnHandler() {
-  const sumOfAngles = calculateSumOfAngles(
-    Number(angleInput[0].value),
-    Number(angleInput[1].value),
-    Number(angleInput[2].value)
-  );
+  if (
+    Number(angleInput[0].value) > 0 &&
+    Number(angleInput[1].value) > 0 &&
+    Number(angleInput[2].value) > 0
+  ) {
+    const sumOfAngles = calculateSumOfAngles(
+      Number(angleInput[0].value),
+      Number(angleInput[1].value),
+      Number(angleInput[2].value)
+    );
 
-  if (sumOfAngles === 180) {
-    outputEl.innerText = "Yes, these angles can make a triangle";
+    if (sumOfAngles === 180) {
+      outputEl.innerText = "Yes, these angles can make a triangle";
+    } else {
+      outputEl.innerText = "No, these angles cannot make a triangle";
+    }
   } else {
-    outputEl.innerText = "No, these angles cannot make a triangle";
+    outputEl.innerText = "Values must be greater than 0.";
   }
 }
 
